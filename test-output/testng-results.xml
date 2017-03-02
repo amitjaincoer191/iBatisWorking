@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="560" started-at="2015-12-01T14:01:43Z" finished-at="2015-12-01T14:01:44Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="560" started-at="2015-12-01T14:01:43Z" finished-at="2015-12-01T14:01:44Z">
+      <class name="com.ibatis.demo.TestiBatisMain">
+        <test-method status="PASS" signature="configureiBatis()[pri:0, instance:com.ibatis.demo.TestiBatisMain@1412c2f]" name="configureiBatis" is-config="true" duration-ms="230" started-at="2015-12-01T19:31:43Z" finished-at="2015-12-01T19:31:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureiBatis -->
+        <test-method status="PASS" signature="testDeleteQueryUsingiBatis()[pri:0, instance:com.ibatis.demo.TestiBatisMain@1412c2f]" name="testDeleteQueryUsingiBatis" duration-ms="310" started-at="2015-12-01T19:31:43Z" finished-at="2015-12-01T19:31:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteQueryUsingiBatis -->
+      </class> <!-- com.ibatis.demo.TestiBatisMain -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

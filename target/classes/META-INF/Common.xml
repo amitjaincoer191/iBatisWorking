@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sqlMap  PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
+        "http://www.ibatis.com/dtd/sql-map-2.dtd">
+<sqlMap namespace="common" >
+
+    <insert id="addEmpDetails">
+	<![CDATA[
+	insert into employee(emp_id,emp_name,emp_salary) values(#emp_id#,#emp_name#,#emp_salary#)
+    ]]>
+	</insert>
+	
+	<select id="getEmpDetails" resultClass="java.util.HashMap">
+	<![CDATA[
+	select emp_salary as "salary" , emp_name as "name" from employee where emp_id=1 
+	]]>
+	</select>
+	
+	<update id="updateEmpDetails">
+	<![CDATA[
+	update employee set emp_salary=#salary# where emp_id=#id#
+	]]>
+	</update>
+
+	<delete id="deleteEmpDetails">
+	<![CDATA[
+	delete from employee where emp_id=#id#
+	]]>
+	</delete>
+		
+</sqlMap>
